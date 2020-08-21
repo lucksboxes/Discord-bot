@@ -12,5 +12,5 @@ async def on_message(message):
     if message.content.startswith("///언더태일"):
         await message.channel.send("아시는구나!")
 
-
-client.run("NzQ1NjE4NTA3Njg5MDk5NDA0.Xz0ZWQ.HTxDinrnxSDmRUV-de5hjwZsjWs")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
